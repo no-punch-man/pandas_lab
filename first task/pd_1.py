@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-df = pd.read_csv(r'C:\Users\Anton\Downloads\transactions.csv', sep = ',')
+df = pd.read_csv(r'sources\transactions.csv', sep = ',')
 del df['Unnamed: 0']
 #1 task
 sorted_df = df.sort_values(by='SUM', ascending=False)
