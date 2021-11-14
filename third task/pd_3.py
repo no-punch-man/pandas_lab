@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-df_g = pd.read_excel(r'C:\Users\Anton\Downloads\students\students_info.xlsx')
-df_ = pd.read_html(r'C:\Users\Anton\Downloads\students\results_ejudge.html')
+df_g = pd.read_excel(r'sources\students_info.xlsx')
+df_ = pd.read_html(r'sources\results_ejudge.html')
 df_m = df_[0]
 df_g.rename(columns = {'login': 'User'}, inplace = True)
 sorted_df_m = df_m.sort_values(by = 'User')
