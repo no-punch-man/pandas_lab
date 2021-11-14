@@ -1,7 +1,6 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-df = pd.read_csv(r'C:\Users\Anton\Downloads\flights.csv', sep = ',')
+df = pd.read_csv(r'sources\flights.csv', sep = ',')
 del df['Unnamed: 0']
 labels = pd.unique(df['CARGO'])
 width = 0.9
